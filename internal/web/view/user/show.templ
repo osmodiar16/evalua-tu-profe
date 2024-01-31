@@ -1,0 +1,11 @@
+package user
+
+import "github.com/osmodiar16/evalua-tu-profe/internal/web/view/layout"
+import "github.com/osmodiar16/evalua-tu-profe/internal/app/models"
+
+
+templ Show(u models.User){
+  @layout.Base(){
+    <h1>Hello {u.UserName} from the user page</h1>
+  }
+}
